@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Comparison App</title>
+	<link rel="stylesheet" href="compare.css">
+</head>
+<body>
+
+	<div id="control-bar">
+		<label for="input1">Image 1:</label>
+		<input type="file" id="input1" accept="image/*">
+
+		<label for="input2">Image 2:</label>
+		  <input type="file" id="input2" accept="image/*">
+
+		<label for="fill-switch">Fill:</label>
+		<input type="checkbox" id="fill-switch">
+
+		<label for="mode-switch">Mode:</label>
+		<input type="checkbox" id="mode-switch">
+	
+		<div id="image-label" class="image-label">Image 1 on top</div>
+	</div>
+
+	<div id="image-container">
+		<img id="image1-display" src="resources/otter.jpg">
+		<img id="image2-display" src="resources/otter-realesrgan-4xplus.png">
+	</div>
+	<script src="compare.js"></script> 
+</body>
+</html>
