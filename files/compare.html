@@ -3,29 +3,36 @@
 <head>
 	<title>Image Comparison App</title>
 	<link rel="stylesheet" href="compare.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 	<div id="control-bar">
-		<label for="input1">Image 1:</label>
-		<input type="file" id="input1" accept="image/*">
+		<div id="input1box">
+			<label for="input1">Image 1:</label>
+			<input type="file" id="input1" accept="image/*">
+		</div>
 
-		<label for="input2">Image 2:</label>
-		  <input type="file" id="input2" accept="image/*">
 
-		<label for="fill-switch">Fill:</label>
-		<input type="checkbox" id="fill-switch">
+		<div id="input2box">
+			<label for="input2">Image 2:</label>
+			<input type="file" id="input2" accept="image/*">
+		</div>
+
+		<button class="btn" id="fit-button"><i class="fa-regular fa-arrows-left-right-to-line"></i></button>
 
 		<label for="mode-switch">Mode:</label>
-		<input type="checkbox" id="mode-switch">
+		<input type="checkbox" id="mode-switch" checked="checked">
 	
 		<div id="image-label" class="image-label">Image 1 on top</div>
 	</div>
 
-	<div id="image-container">
-		<img id="image1-display" src="resources/otter.jpg">
-		<img id="image2-display" src="resources/otter-realesrgan-4xplus.png">
+	<div id="image-container" class="">
+		<img id="image1-display" class="" src="../resources/otter.jpg">
+		<img id="image2-display" class="" src="../resources/otter-realesrgan-x4plus.png">
 	</div>
-	<script src="compare.js"></script> 
+	<script src="compare.js">
+		// fitImage()
+	</script> 
 </body>
 </html>
