@@ -19,10 +19,12 @@
 			<input type="file" id="input2" accept="image/*">
 		</div>
 
-		<button class="btn" id="fit-button"><i class="fa-regular fa-arrows-left-right-to-line"></i></button>
+		<button class="btn" id="fit-button"><img src="../resources/arrows-left-right-to-line-solid.svg"></button>
+		<button class="btn" id="zoom-out-button"><img src="../resources/minus-solid.svg"></button>
+		<button class="btn" id="zoom-in-button"><img src="plus-solid.svg"></button>
 
-		<label for="mode-switch">Mode:</label>
-		<input type="checkbox" id="mode-switch" checked="checked">
+		<label for="mode-switch">Slider:</label>
+		<input type="checkbox" id="mode-switch">
 	
 		<div id="image-label" class="image-label">Image 1 on top</div>
 	</div>
@@ -32,7 +34,7 @@
 		<img id="image2-display" class="" src="../resources/otter-realesrgan-x4plus.png">
 	</div>
 	<script src="compare.js">
-		// fitImage()
+		scaleImage()
 	</script> 
 </body>
 </html>
